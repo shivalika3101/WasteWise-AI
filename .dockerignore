@@ -1,0 +1,24 @@
+# Secrets. The build context is read from disk, not from git, so a developer's
+# local .env is present here even though it is gitignored. Without these rules
+# `COPY backend /repo/backend` would bake database and JWT secrets into an
+# image layer. .env.example is a different filename and stays included.
+.env
+**/.env
+!.env.example
+!**/.env.example
+
+**/__pycache__
+**/*.pyc
+**/.pytest_cache
+**/.venv
+**/node_modules
+frontend/dist
+.git
+.gitignore
+ml/notebooks
+ml/results
+ml/data
+docs
+*.md
+!README.md
+!backend/README.md

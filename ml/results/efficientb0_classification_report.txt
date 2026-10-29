@@ -1,0 +1,36 @@
+                            precision    recall  f1-score   support
+
+              aerosol_cans       0.89      0.92      0.91        79
+        aluminum_food_cans       0.60      0.46      0.52        80
+        aluminum_soda_cans       0.78      0.91      0.84        80
+           cardboard_boxes       0.52      0.72      0.60        72
+       cardboard_packaging       0.62      0.42      0.50        80
+                  clothing       0.87      0.94      0.91        72
+            coffee_grounds       0.96      1.00      0.98        76
+disposable_plastic_cutlery       0.98      0.97      0.98        67
+                 eggshells       0.94      0.94      0.94        68
+                food_waste       0.98      1.00      0.99        60
+    glass_beverage_bottles       0.95      0.90      0.93        91
+ glass_cosmetic_containers       0.93      0.97      0.95        65
+           glass_food_jars       0.88      0.89      0.88        55
+                 magazines       0.88      0.96      0.92        73
+                 newspaper       0.89      0.83      0.86        84
+              office_paper       0.90      0.82      0.86        74
+                paper_cups       0.88      0.86      0.87        70
+          plastic_cup_lids       0.88      0.92      0.90        84
+ plastic_detergent_bottles       0.95      0.97      0.96        60
+   plastic_food_containers       0.88      0.88      0.88        72
+     plastic_shopping_bags       0.91      0.89      0.90        84
+      plastic_soda_bottles       0.91      0.84      0.87        80
+            plastic_straws       0.86      0.90      0.88        71
+        plastic_trash_bags       0.92      0.92      0.92        90
+     plastic_water_bottles       0.78      0.85      0.81        71
+                     shoes       0.99      1.00      0.99        69
+           steel_food_cans       0.59      0.62      0.61        77
+            styrofoam_cups       0.96      0.89      0.92        80
+ styrofoam_food_containers       0.93      0.95      0.94        78
+                  tea_bags       0.95      0.84      0.89        88
+
+                  accuracy                           0.86      2250
+                 macro avg       0.86      0.87      0.86      2250
+              weighted avg       0.86      0.86      0.86      2250

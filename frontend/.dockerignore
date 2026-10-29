@@ -1,0 +1,10 @@
+# Secrets. Same reasoning as the root .dockerignore: the frontend build context
+# is read from disk, so a local .env would otherwise reach the build stage.
+.env
+**/.env
+!.env.example
+!**/.env.example
+
+node_modules
+dist
+.git

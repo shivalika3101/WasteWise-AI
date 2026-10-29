@@ -1,0 +1,45 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = "Backend API for the waste classification application"
+authors = [
+    {name = "Zahra Sabouri",email = "zahrasabouri998@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12,!=3.14.1,<4.0"
+dependencies = [
+    "fastapi[standard] (>=0.139.0,<0.140.0)",
+    "torch (>=2.13.0,<3.0.0)",
+    "torchvision (>=0.28.0,<0.29.0)",
+    "pillow (>=12.3.0,<13.0.0)",
+    "pydantic-settings (>=2.14.2,<3.0.0)",
+    "sqlalchemy (>=2.0.51,<3.0.0)",
+    "psycopg[binary] (>=3.3.4,<4.0.0)",
+    "alembic (>=1.18.5,<2.0.0)",
+    "bcrypt (>=5.0.0,<6.0.0)",
+    "pyjwt (>=2.13.0,<3.0.0)",
+    "teamb-ml",
+    "numpy (>=2.5.1,<3.0.0)",
+    "keras (==3.15.0)"
+]
+
+[tool.poetry.dependencies]
+teamb-ml = {path = "..", develop = true}
+
+[dependency-groups]
+dev = [
+    "pytest (>=9.1.1,<10.0.0)"
+]
+
+
+[tool.poetry]
+package-mode = false
+
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
